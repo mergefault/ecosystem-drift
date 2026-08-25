@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-08-25T05:47:10.065Z",
+  "packages": {
+    "react": {
+      "version": "19.2.8",
+      "publishedAt": "2026-07-21T15:41:28.716Z",
+      "node": ">=0.10.0",
+      "deprecated": null,
+      "license": "MIT"
+    },
+    "next": {
+      "version": "16.3.2",
+      "publishedAt": "2026-08-21T09:54:02.099Z",
+      "node": ">=20.9.0",
+      "deprecated": null,
+      "license": "MIT"
+    },
+    "typescript": {
+      "version": "7.0.2",
+      "publishedAt": "2026-07-08T15:55:18.431Z",
+      "node": ">=16.20.0",
+      "deprecated": null,
+      "license": "Apache-2.0"
+    },
+    "vite": {
+      "version": "8.2.2",
+      "publishedAt": "2026-08-20T04:14:39.107Z",
+      "node": "^20.19.0 || >=22.12.0",
+      "deprecated": null,
+      "license": "MIT"
+    },
+    "vitest": {
+      "version": "4.1.11",
+      "publishedAt": "2026-08-18T14:27:07.240Z",
+      "node": "^20.0.0 || ^22.0.0 || >=24.0.0",
+      "deprecated": null,
+      "license": "MIT"
+    },
+    "playwright": {
+      "version": "1.62.1",
+      "publishedAt": "2026-07-30T16:38:49.134Z",
+      "node": ">=20",
+      "deprecated": null,
+      "license": "Apache-2.0"
+    },
+    "zod": {
+      "version": "4.4.3",
+      "publishedAt": "2026-05-04T07:06:40.819Z",
+      "node": null,
+      "deprecated": null,
+      "license": "MIT"
+    },
+    "@tanstack/react-query": {
+      "version": "5.102.3",
+      "publishedAt": "2026-08-24T19:26:18.951Z",
+      "node": null,
+      "deprecated": null,
+      "license": "MIT"
+    },
+    "zustand": {
+      "version": "5.0.15",
+      "publishedAt": "2026-08-13T00:39:55.466Z",
+      "node": ">=12.20.0",
+      "deprecated": null,
+      "license": "MIT"
+    },
+    "eslint": {
+      "version": "10.9.1",
+      "publishedAt": "2026-08-24T18:21:58.062Z",
+      "node": "^20.19.0 || ^22.13.0 || >=24",
+      "deprecated": null,
+      "license": "MIT"
+    },
+    "prettier": {
+      "version": "3.9.6",
+      "publishedAt": "2026-07-21T05:51:53.987Z",
+      "node": ">=14",
+      "deprecated": null,
+      "license": "MIT"
+    },
+    "turbo": {
+      "version": "2.10.11",
+      "publishedAt": "2026-08-18T15:17:37.059Z",
+      "node": null,
+      "deprecated": null,
+      "license": "MIT"
+    }
+  }
+}
