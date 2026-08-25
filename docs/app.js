@@ -1,7 +1,9 @@
 const LATEST_PATH = "./data/latest.json";
 const HISTORY_PATH = "./data/history.json";
-const CHART_WINDOW = 30;
+
+const ACTIVITY_WINDOW = 30;
 const CHANGE_HISTORY_LIMIT = 20;
+const DAY_MS = 24 * 60 * 60 * 1000;
 
 async function fetchJson(path) {
   const response = await fetch(path);
@@ -20,18 +22,30 @@ function formatDate(value) {
     return "—";
   }
 
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return "—";
+  }
+
   return new Intl.DateTimeFormat(undefined, {
     year: "numeric",
     month: "short",
     day: "numeric"
-  }).format(new Date(value));
+  }).format(date);
 }
 
 function formatShortDate(value) {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return "";
+  }
+
   return new Intl.DateTimeFormat(undefined, {
     month: "short",
     day: "numeric"
-  }).format(new Date(value));
+  }).format(date);
 }
 
 function escapeHtml(value) {
@@ -43,34 +57,111 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
-function renderMetrics(latest, history) {
-  const packageCount = Object.keys(latest.packages).length;
+function getChangesSince(history, timestamp) {
+  return history.flatMap(observation => {
+    const checkedAt = new Date(observation.checkedAt).getTime();
 
-  const changeCount = history.reduce(
-    (total, observation) => total + observation.changes.length,
-    0
-  );
+    if (!Number.isFinite(checkedAt) || checkedAt < timestamp) {
+      return [];
+    }
 
-  document.querySelector("#package-count").textContent = packageCount;
-  document.querySelector("#change-count").textContent = changeCount;
-  document.querySelector("#observation-count").textContent = history.length;
-  document.querySelector("#last-checked").textContent = formatDate(
-    latest.checkedAt
-  );
+    return observation.changes.map(change => ({
+      ...change,
+      checkedAt: observation.checkedAt
+    }));
+  });
 }
 
-function renderPackages(latest) {
+function renderMetrics(latest, history) {
+  const thirtyDaysAgo = Date.now() - 30 * DAY_MS;
+  const recentChanges = getChangesSince(history, thirtyDaysAgo);
+
+  const majorReleases = recentChanges.filter(
+    change => change.type === "major"
+  ).length;
+
+  const engineChanges = recentChanges.filter(
+    change => change.type === "engine"
+  ).length;
+
+  document.querySelector("#package-count").textContent =
+    Object.keys(latest.packages).length;
+
+  document.querySelector("#change-count").textContent =
+    recentChanges.length;
+
+  document.querySelector("#major-count").textContent =
+    majorReleases;
+
+  document.querySelector("#engine-count").textContent =
+    engineChanges;
+}
+
+function getPackageStatus(name, history) {
+  const latestChange = history
+    .flatMap(observation =>
+      observation.changes.map(change => ({
+        ...change,
+        checkedAt: observation.checkedAt
+      }))
+    )
+    .filter(change => change.package === name)
+    .at(-1);
+
+  if (!latestChange) {
+    return "stable";
+  }
+
+  const age =
+    Date.now() - new Date(latestChange.checkedAt).getTime();
+
+  if (age > 30 * DAY_MS) {
+    return "stable";
+  }
+
+  return latestChange.type;
+}
+
+function getNpmUrl(name) {
+  return `https://www.npmjs.com/package/${encodeURIComponent(name)}`;
+}
+
+function renderPackages(latest, history) {
   const table = document.querySelector("#package-table");
 
   const rows = Object.entries(latest.packages)
     .sort(([left], [right]) => left.localeCompare(right))
     .map(([name, pkg]) => {
+      const status = pkg.deprecated
+        ? "deprecated"
+        : getPackageStatus(name, history);
+
       return `
         <tr>
-          <td class="package-name">${escapeHtml(name)}</td>
+          <td>
+            <a
+              class="package-link"
+              href="${escapeHtml(getNpmUrl(name))}"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ${escapeHtml(name)}
+            </a>
+          </td>
+
           <td>${escapeHtml(pkg.version)}</td>
-          <td>${escapeHtml(pkg.node ?? "—")}</td>
+
+          <td class="engine-value">
+            ${escapeHtml(pkg.node ?? "—")}
+          </td>
+
           <td>${escapeHtml(formatDate(pkg.publishedAt))}</td>
+
+          <td>
+            <span class="status-badge status-${escapeHtml(status)}">
+              ${escapeHtml(status)}
+            </span>
+          </td>
         </tr>
       `;
     });
@@ -86,7 +177,10 @@ function getRecentChanges(history) {
         checkedAt: observation.checkedAt
       }))
     )
-    .reverse()
+    .sort(
+      (left, right) =>
+        new Date(right.checkedAt) - new Date(left.checkedAt)
+    )
     .slice(0, CHANGE_HISTORY_LIMIT);
 }
 
@@ -119,13 +213,17 @@ function renderChangeHistory(history) {
             ${escapeHtml(change.package)}
           </span>
 
-          <span class="change-type">
-            ${escapeHtml(change.type)}
+          <span>
+            <span
+              class="status-badge status-${escapeHtml(change.type)}"
+            >
+              ${escapeHtml(change.type)}
+            </span>
           </span>
 
           <span class="change-value">
             ${escapeHtml(from)}
-            <span aria-hidden="true">→</span>
+            <span class="change-arrow" aria-hidden="true">→</span>
             ${escapeHtml(to)}
           </span>
         </article>
@@ -135,7 +233,7 @@ function renderChangeHistory(history) {
 }
 
 function renderChart(history) {
-  const observations = history.slice(-CHART_WINDOW);
+  const observations = history.slice(-ACTIVITY_WINDOW);
   const canvas = document.querySelector("#activity-chart");
 
   if (!canvas || typeof Chart === "undefined") {
@@ -157,9 +255,9 @@ function renderChart(history) {
             observation => observation.changes.length
           ),
           borderWidth: 2,
-          pointRadius: 2,
-          pointHoverRadius: 4,
-          tension: 0.25,
+          pointRadius: 3,
+          pointHoverRadius: 5,
+          tension: 0.2,
           fill: false
         }
       ]
@@ -177,6 +275,10 @@ function renderChart(history) {
       plugins: {
         legend: {
           display: false
+        },
+
+        tooltip: {
+          displayColors: false
         }
       },
 
@@ -214,7 +316,7 @@ async function initialize() {
   }
 
   renderMetrics(latest, history);
-  renderPackages(latest);
+  renderPackages(latest, history);
   renderChangeHistory(history);
   renderChart(history);
 }
@@ -222,9 +324,7 @@ async function initialize() {
 initialize().catch(error => {
   console.error(error);
 
-  const main = document.querySelector("main");
-
-  main?.insertAdjacentHTML(
+  document.querySelector("main")?.insertAdjacentHTML(
     "beforeend",
     `
       <p class="error-state">

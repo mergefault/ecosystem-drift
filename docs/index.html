@@ -26,6 +26,7 @@
       <header class="header">
         <div>
           <p class="eyebrow">mergefault / ecosystem-drift</p>
+
           <h1>Ecosystem Drift</h1>
 
           <p class="description">
@@ -40,25 +41,25 @@
         </div>
       </header>
 
-      <section class="metrics" aria-label="Tracker summary">
+      <section class="metrics" aria-label="Ecosystem summary">
         <article class="metric">
-          <span class="metric-label">Packages</span>
+          <span class="metric-label">Packages tracked</span>
           <strong id="package-count">—</strong>
         </article>
 
         <article class="metric">
-          <span class="metric-label">Changes detected</span>
+          <span class="metric-label">Changes · 30d</span>
           <strong id="change-count">—</strong>
         </article>
 
         <article class="metric">
-          <span class="metric-label">Observations</span>
-          <strong id="observation-count">—</strong>
+          <span class="metric-label">Major releases · 30d</span>
+          <strong id="major-count">—</strong>
         </article>
 
         <article class="metric">
-          <span class="metric-label">Last checked</span>
-          <strong id="last-checked">—</strong>
+          <span class="metric-label">Engine changes · 30d</span>
+          <strong id="engine-count">—</strong>
         </article>
       </section>
 
@@ -76,7 +77,7 @@
           <div class="chart-container">
             <canvas
               id="activity-chart"
-              aria-label="Detected ecosystem changes"
+              aria-label="Detected ecosystem changes over time"
             ></canvas>
           </div>
         </article>
@@ -94,9 +95,10 @@
               <thead>
                 <tr>
                   <th scope="col">Package</th>
-                  <th scope="col">Version</th>
+                  <th scope="col">Latest</th>
                   <th scope="col">Node</th>
                   <th scope="col">Published</th>
+                  <th scope="col">Status</th>
                 </tr>
               </thead>
 
@@ -110,7 +112,7 @@
         <header class="panel-header">
           <div>
             <p class="panel-label">History</p>
-            <h2>Recent changes</h2>
+            <h2>Recent drift</h2>
           </div>
         </header>
 
@@ -119,7 +121,10 @@
 
       <footer class="footer">
         <span>Data sourced from the npm registry.</span>
-        <span>Updated automatically by GitHub Actions.</span>
+
+        <span>
+          Updated automatically by GitHub Actions.
+        </span>
       </footer>
     </main>
   </body>
