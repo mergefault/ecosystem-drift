@@ -52,42 +52,108 @@ async function fetchPackage(name) {
   };
 }
 
+function parseSemver(version) {
+  const match = version.match(/^v?(\d+)\.(\d+)\.(\d+)/);
+
+  if (!match) {
+    return null;
+  }
+
+  return {
+    major: Number(match[1]),
+    minor: Number(match[2]),
+    patch: Number(match[3])
+  };
+}
+
+function classifyVersionChange(previous, current) {
+  const from = parseSemver(previous);
+  const to = parseSemver(current);
+
+  if (!from || !to) {
+    return "version";
+  }
+
+  if (from.major !== to.major) {
+    return "major";
+  }
+
+  if (from.minor !== to.minor) {
+    return "minor";
+  }
+
+  if (from.patch !== to.patch) {
+    return "patch";
+  }
+
+  return "version";
+}
+
 function detectChanges(name, previous, current) {
   if (!previous) {
     return [];
   }
 
-  const trackedFields = [
-    ["version", "version"],
-    ["node", "node"],
-    ["deprecated", "deprecation"],
-    ["license", "license"]
-  ];
+  const changes = [];
 
-  return trackedFields.flatMap(([field, type]) => {
-    if (previous[field] === current[field]) {
-      return [];
-    }
+  if (previous.version !== current.version) {
+    changes.push({
+      package: name,
+      type: classifyVersionChange(
+        previous.version,
+        current.version
+      ),
+      from: previous.version,
+      to: current.version
+    });
+  }
 
-    return [
-      {
-        package: name,
-        type,
-        from: previous[field] ?? null,
-        to: current[field] ?? null
-      }
-    ];
-  });
+  if (previous.node !== current.node) {
+    changes.push({
+      package: name,
+      type: "engine",
+      from: previous.node ?? null,
+      to: current.node ?? null
+    });
+  }
+
+  if (previous.deprecated !== current.deprecated) {
+    changes.push({
+      package: name,
+      type: "deprecation",
+      from: previous.deprecated ?? null,
+      to: current.deprecated ?? null
+    });
+  }
+
+  if (previous.license !== current.license) {
+    changes.push({
+      package: name,
+      type: "license",
+      from: previous.license ?? null,
+      to: current.license ?? null
+    });
+  }
+
+  return changes;
 }
 
 const packages = await readJson(PACKAGES_PATH, []);
+
 const previousSnapshot = await readJson(LATEST_PATH, {
   packages: {}
 });
+
 const history = await readJson(HISTORY_PATH, []);
 
 if (!Array.isArray(packages) || packages.length === 0) {
-  throw new Error("No packages configured in config/packages.json");
+  throw new Error(
+    "No packages configured in config/packages.json"
+  );
+}
+
+if (!Array.isArray(history)) {
+  throw new Error("Invalid history data");
 }
 
 const snapshot = {
@@ -129,6 +195,7 @@ await Promise.all([
     LATEST_PATH,
     `${JSON.stringify(snapshot, null, 2)}\n`
   ),
+
   writeFile(
     HISTORY_PATH,
     `${JSON.stringify(history, null, 2)}\n`
@@ -137,5 +204,5 @@ await Promise.all([
 
 console.log(
   `Checked ${historyEntry.packageCount} packages; ` +
-  `${changes.length} change${changes.length === 1 ? "" : "s"} detected.`
+    `${changes.length} change${changes.length === 1 ? "" : "s"} detected.`
 );
