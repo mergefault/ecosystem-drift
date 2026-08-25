@@ -1,14 +1,18 @@
 [
   "react",
+  "react-dom",
   "next",
   "typescript",
   "vite",
   "vitest",
   "playwright",
-  "zod",
-  "@tanstack/react-query",
-  "zustand",
   "eslint",
   "prettier",
-  "turbo"
+  "turbo",
+  "zod",
+  "zustand",
+  "@tanstack/react-query",
+  "@trpc/server",
+  "express",
+  "fastify"
 ]
