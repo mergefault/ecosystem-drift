@@ -1,0 +1,14 @@
+[
+  "react",
+  "next",
+  "typescript",
+  "vite",
+  "vitest",
+  "playwright",
+  "zod",
+  "@tanstack/react-query",
+  "zustand",
+  "eslint",
+  "prettier",
+  "turbo"
+]

@@ -1,0 +1,48 @@
+name: Ecosystem Drift
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 3 * * *"
+
+concurrency:
+  group: ecosystem-drift
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    name: Update ecosystem data
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Collect ecosystem data
+        run: npm run collect
+
+      - name: Generate dashboard data
+        run: npm run generate
+
+      - name: Commit updated observations
+        run: |
+          if git diff --quiet -- data docs/data; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config user.name "ecosystem-drift[bot]"
+          git config user.email "ecosystem-drift[bot]@users.noreply.github.com"
+
+          git add data docs/data
+          git commit -m "data: record ecosystem observation"
+          git push

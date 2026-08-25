@@ -1,0 +1,12 @@
+{
+  "name": "ecosystem-drift",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tracks meaningful changes across the JavaScript ecosystem.",
+  "type": "module",
+  "scripts": {
+    "collect": "node scripts/collect.mjs",
+    "generate": "node scripts/generate.mjs",
+    "update": "npm run collect && npm run generate"
+  }
+}

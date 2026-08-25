@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Automated tracking of dependency and runtime changes across the JavaScript ecosystem."
+    />
+
+    <title>Ecosystem Drift</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"
+      defer
+    ></script>
+
+    <script src="./app.js" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="header">
+        <div>
+          <p class="eyebrow">mergefault / ecosystem-drift</p>
+          <h1>Ecosystem Drift</h1>
+
+          <p class="description">
+            Automated tracking of dependency and runtime changes across the
+            JavaScript ecosystem.
+          </p>
+        </div>
+
+        <div class="status">
+          <span class="status-indicator" aria-hidden="true"></span>
+          <span>Automated</span>
+        </div>
+      </header>
+
+      <section class="metrics" aria-label="Tracker summary">
+        <article class="metric">
+          <span class="metric-label">Packages</span>
+          <strong id="package-count">—</strong>
+        </article>
+
+        <article class="metric">
+          <span class="metric-label">Changes detected</span>
+          <strong id="change-count">—</strong>
+        </article>
+
+        <article class="metric">
+          <span class="metric-label">Observations</span>
+          <strong id="observation-count">—</strong>
+        </article>
+
+        <article class="metric">
+          <span class="metric-label">Last checked</span>
+          <strong id="last-checked">—</strong>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel">
+          <header class="panel-header">
+            <div>
+              <p class="panel-label">Activity</p>
+              <h2>Detected changes</h2>
+            </div>
+
+            <span>Last 30 observations</span>
+          </header>
+
+          <div class="chart-container">
+            <canvas
+              id="activity-chart"
+              aria-label="Detected ecosystem changes"
+            ></canvas>
+          </div>
+        </article>
+
+        <article class="panel">
+          <header class="panel-header">
+            <div>
+              <p class="panel-label">Current state</p>
+              <h2>Package snapshot</h2>
+            </div>
+          </header>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Package</th>
+                  <th scope="col">Version</th>
+                  <th scope="col">Node</th>
+                  <th scope="col">Published</th>
+                </tr>
+              </thead>
+
+              <tbody id="package-table"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel history-panel">
+        <header class="panel-header">
+          <div>
+            <p class="panel-label">History</p>
+            <h2>Recent changes</h2>
+          </div>
+        </header>
+
+        <div id="change-history" class="change-history"></div>
+      </section>
+
+      <footer class="footer">
+        <span>Data sourced from the npm registry.</span>
+        <span>Updated automatically by GitHub Actions.</span>
+      </footer>
+    </main>
+  </body>
+</html>
