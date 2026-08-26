@@ -13,5 +13,29 @@
     "checkedAt": "2026-08-25T06:36:42.672Z",
     "packageCount": 16,
     "changes": []
+  },
+  {
+    "checkedAt": "2026-08-26T05:08:56.003Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "next",
+        "type": "patch",
+        "from": "16.3.2",
+        "to": "16.3.3"
+      },
+      {
+        "package": "turbo",
+        "type": "patch",
+        "from": "2.10.11",
+        "to": "2.10.12"
+      },
+      {
+        "package": "@tanstack/react-query",
+        "type": "patch",
+        "from": "5.102.3",
+        "to": "5.102.4"
+      }
+    ]
   }
 ]

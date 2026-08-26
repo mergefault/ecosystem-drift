@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-08-25T06:36:42.672Z",
+  "checkedAt": "2026-08-26T05:08:56.003Z",
   "packages": {
     "react": {
       "version": "19.2.8",
@@ -17,8 +17,8 @@
       "license": "MIT"
     },
     "next": {
-      "version": "16.3.2",
-      "publishedAt": "2026-08-21T09:54:02.099Z",
+      "version": "16.3.3",
+      "publishedAt": "2026-08-25T15:32:19.558Z",
       "node": ">=20.9.0",
       "deprecated": null,
       "license": "MIT"
@@ -66,8 +66,8 @@
       "license": "MIT"
     },
     "turbo": {
-      "version": "2.10.11",
-      "publishedAt": "2026-08-18T15:17:37.059Z",
+      "version": "2.10.12",
+      "publishedAt": "2026-08-25T18:38:19.112Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
@@ -87,8 +87,8 @@
       "license": "MIT"
     },
     "@tanstack/react-query": {
-      "version": "5.102.3",
-      "publishedAt": "2026-08-24T19:26:18.951Z",
+      "version": "5.102.4",
+      "publishedAt": "2026-08-25T21:27:52.178Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
