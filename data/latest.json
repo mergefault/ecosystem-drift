@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-08-28T15:31:00.546Z",
+  "checkedAt": "2026-08-29T10:15:06.423Z",
   "packages": {
     "react": {
       "version": "19.2.8",
@@ -73,8 +73,8 @@
       "license": "MIT"
     },
     "zod": {
-      "version": "4.4.3",
-      "publishedAt": "2026-05-04T07:06:40.819Z",
+      "version": "4.5.2",
+      "publishedAt": "2026-08-29T00:36:06.996Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
