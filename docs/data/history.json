@@ -73,5 +73,17 @@
         "to": "4.5.2"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-08-30T09:21:22.767Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "zod",
+        "type": "patch",
+        "from": "4.5.2",
+        "to": "4.5.4"
+      }
+    ]
   }
 ]
