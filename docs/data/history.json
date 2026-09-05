@@ -130,5 +130,29 @@
         "to": "^22.12.0 || ^24.0.0 || >=26.0.0"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-09-05T07:45:53.941Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "playwright",
+        "type": "minor",
+        "from": "1.62.1",
+        "to": "1.63.0"
+      },
+      {
+        "package": "eslint",
+        "type": "minor",
+        "from": "10.9.1",
+        "to": "10.10.0"
+      },
+      {
+        "package": "fastify",
+        "type": "patch",
+        "from": "5.12.1",
+        "to": "5.12.3"
+      }
+    ]
   }
 ]

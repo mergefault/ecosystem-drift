@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-04T08:05:42.642Z",
+  "checkedAt": "2026-09-05T07:45:53.941Z",
   "packages": {
     "react": {
       "version": "19.2.8",
@@ -45,15 +45,15 @@
       "license": "MIT"
     },
     "playwright": {
-      "version": "1.62.1",
-      "publishedAt": "2026-07-30T16:38:49.134Z",
+      "version": "1.63.0",
+      "publishedAt": "2026-09-04T22:45:21.732Z",
       "node": ">=20",
       "deprecated": null,
       "license": "Apache-2.0"
     },
     "eslint": {
-      "version": "10.9.1",
-      "publishedAt": "2026-08-24T18:21:58.062Z",
+      "version": "10.10.0",
+      "publishedAt": "2026-09-04T14:34:21.799Z",
       "node": "^20.19.0 || ^22.13.0 || >=24",
       "deprecated": null,
       "license": "MIT"
@@ -108,8 +108,8 @@
       "license": "MIT"
     },
     "fastify": {
-      "version": "5.12.1",
-      "publishedAt": "2026-08-18T19:51:15.791Z",
+      "version": "5.12.3",
+      "publishedAt": "2026-09-04T08:21:57.526Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
