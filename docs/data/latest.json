@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-09T08:16:25.332Z",
+  "checkedAt": "2026-09-10T08:16:05.036Z",
   "packages": {
     "react": {
-      "version": "19.2.8",
-      "publishedAt": "2026-07-21T15:41:28.716Z",
+      "version": "19.3.0",
+      "publishedAt": "2026-09-09T17:21:30.071Z",
       "node": ">=0.10.0",
       "deprecated": null,
       "license": "MIT"
     },
     "react-dom": {
-      "version": "19.2.8",
-      "publishedAt": "2026-07-21T15:41:41.267Z",
+      "version": "19.3.0",
+      "publishedAt": "2026-09-09T17:17:39.744Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
@@ -73,8 +73,8 @@
       "license": "MIT"
     },
     "zod": {
-      "version": "4.5.4",
-      "publishedAt": "2026-08-29T17:55:42.775Z",
+      "version": "4.6.1",
+      "publishedAt": "2026-09-09T21:50:12.924Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
