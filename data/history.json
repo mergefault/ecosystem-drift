@@ -198,5 +198,23 @@
         "to": "4.6.1"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-09-11T08:10:53.317Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "vite",
+        "type": "minor",
+        "from": "8.2.2",
+        "to": "8.3.0"
+      },
+      {
+        "package": "zod",
+        "type": "patch",
+        "from": "4.6.1",
+        "to": "4.6.2"
+      }
+    ]
   }
 ]
