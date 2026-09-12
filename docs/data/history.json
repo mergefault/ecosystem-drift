@@ -216,5 +216,23 @@
         "to": "4.6.2"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-09-12T08:01:08.383Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "next",
+        "type": "patch",
+        "from": "16.3.4",
+        "to": "16.3.5"
+      },
+      {
+        "package": "fastify",
+        "type": "patch",
+        "from": "5.12.3",
+        "to": "5.12.4"
+      }
+    ]
   }
 ]
