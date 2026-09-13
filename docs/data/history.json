@@ -234,5 +234,17 @@
         "to": "5.12.4"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-09-13T08:25:59.529Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "zod",
+        "type": "patch",
+        "from": "4.6.2",
+        "to": "4.6.4"
+      }
+    ]
   }
 ]
