@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-14T09:07:07.637Z",
+  "checkedAt": "2026-09-15T08:49:23.428Z",
   "packages": {
     "react": {
       "version": "19.3.0",
@@ -66,8 +66,8 @@
       "license": "MIT"
     },
     "turbo": {
-      "version": "2.10.12",
-      "publishedAt": "2026-08-25T18:38:19.112Z",
+      "version": "2.10.13",
+      "publishedAt": "2026-09-14T16:36:00.550Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"

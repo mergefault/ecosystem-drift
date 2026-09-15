@@ -258,5 +258,17 @@
         "to": "4.6.5"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-09-15T08:49:23.428Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "turbo",
+        "type": "patch",
+        "from": "2.10.12",
+        "to": "2.10.13"
+      }
+    ]
   }
 ]
