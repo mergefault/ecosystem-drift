@@ -270,5 +270,35 @@
         "to": "2.10.13"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-09-16T08:43:19.526Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "vitest",
+        "type": "patch",
+        "from": "5.0.0",
+        "to": "5.0.1"
+      },
+      {
+        "package": "prettier",
+        "type": "patch",
+        "from": "3.9.6",
+        "to": "3.9.7"
+      },
+      {
+        "package": "@tanstack/react-query",
+        "type": "minor",
+        "from": "5.102.8",
+        "to": "5.103.0"
+      },
+      {
+        "package": "fastify",
+        "type": "patch",
+        "from": "5.12.4",
+        "to": "5.12.5"
+      }
+    ]
   }
 ]

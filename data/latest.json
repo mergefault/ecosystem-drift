@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-15T08:49:23.428Z",
+  "checkedAt": "2026-09-16T08:43:19.526Z",
   "packages": {
     "react": {
       "version": "19.3.0",
@@ -38,8 +38,8 @@
       "license": "MIT"
     },
     "vitest": {
-      "version": "5.0.0",
-      "publishedAt": "2026-09-03T12:24:30.312Z",
+      "version": "5.0.1",
+      "publishedAt": "2026-09-15T08:49:35.830Z",
       "node": "^22.12.0 || ^24.0.0 || >=26.0.0",
       "deprecated": null,
       "license": "MIT"
@@ -59,8 +59,8 @@
       "license": "MIT"
     },
     "prettier": {
-      "version": "3.9.6",
-      "publishedAt": "2026-07-21T05:51:53.987Z",
+      "version": "3.9.7",
+      "publishedAt": "2026-09-16T08:23:07.844Z",
       "node": ">=14",
       "deprecated": null,
       "license": "MIT"
@@ -87,8 +87,8 @@
       "license": "MIT"
     },
     "@tanstack/react-query": {
-      "version": "5.102.8",
-      "publishedAt": "2026-08-27T16:06:57.089Z",
+      "version": "5.103.0",
+      "publishedAt": "2026-09-16T07:08:58.778Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
@@ -108,8 +108,8 @@
       "license": "MIT"
     },
     "fastify": {
-      "version": "5.12.4",
-      "publishedAt": "2026-09-11T09:23:32.241Z",
+      "version": "5.12.5",
+      "publishedAt": "2026-09-16T07:37:06.302Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
