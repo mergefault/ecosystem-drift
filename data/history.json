@@ -300,5 +300,23 @@
         "to": "5.12.5"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-09-17T08:46:47.165Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "@tanstack/react-query",
+        "type": "patch",
+        "from": "5.103.0",
+        "to": "5.103.1"
+      },
+      {
+        "package": "@trpc/server",
+        "type": "minor",
+        "from": "11.18.0",
+        "to": "11.19.0"
+      }
+    ]
   }
 ]
