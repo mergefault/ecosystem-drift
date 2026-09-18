@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-17T08:46:47.165Z",
+  "checkedAt": "2026-09-18T08:22:38.494Z",
   "packages": {
     "react": {
       "version": "19.3.0",
@@ -59,8 +59,8 @@
       "license": "MIT"
     },
     "prettier": {
-      "version": "3.9.7",
-      "publishedAt": "2026-09-16T08:23:07.844Z",
+      "version": "3.9.8",
+      "publishedAt": "2026-09-17T21:41:05.085Z",
       "node": ">=14",
       "deprecated": null,
       "license": "MIT"
