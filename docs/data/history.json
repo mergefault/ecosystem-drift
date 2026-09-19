@@ -330,5 +330,23 @@
         "to": "3.9.8"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-09-19T08:10:27.997Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "eslint",
+        "type": "minor",
+        "from": "10.10.0",
+        "to": "10.11.0"
+      },
+      {
+        "package": "turbo",
+        "type": "minor",
+        "from": "2.10.13",
+        "to": "2.11.2"
+      }
+    ]
   }
 ]
