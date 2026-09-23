@@ -370,5 +370,29 @@
         "to": "5.103.2"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-09-23T08:42:57.917Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "next",
+        "type": "patch",
+        "from": "16.3.5",
+        "to": "16.3.6"
+      },
+      {
+        "package": "prettier",
+        "type": "patch",
+        "from": "3.9.8",
+        "to": "3.9.9"
+      },
+      {
+        "package": "turbo",
+        "type": "patch",
+        "from": "2.11.2",
+        "to": "2.11.3"
+      }
+    ]
   }
 ]
