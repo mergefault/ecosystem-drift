@@ -417,5 +417,23 @@
         "to": "2.11.4"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-09-26T08:43:38.671Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "vitest",
+        "type": "patch",
+        "from": "5.0.1",
+        "to": "5.0.2"
+      },
+      {
+        "package": "@tanstack/react-query",
+        "type": "minor",
+        "from": "5.103.2",
+        "to": "5.104.0"
+      }
+    ]
   }
 ]
