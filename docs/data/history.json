@@ -440,5 +440,17 @@
     "checkedAt": "2026-09-27T09:24:10.791Z",
     "packageCount": 16,
     "changes": []
+  },
+  {
+    "checkedAt": "2026-09-28T10:00:12.911Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "turbo",
+        "type": "patch",
+        "from": "2.11.4",
+        "to": "2.11.5"
+      }
+    ]
   }
 ]
