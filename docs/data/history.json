@@ -452,5 +452,17 @@
         "to": "2.11.5"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-09-29T09:59:34.847Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "next",
+        "type": "patch",
+        "from": "16.3.6",
+        "to": "16.3.7"
+      }
+    ]
   }
 ]

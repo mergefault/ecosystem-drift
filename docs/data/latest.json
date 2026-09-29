@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-28T10:00:12.911Z",
+  "checkedAt": "2026-09-29T09:59:34.847Z",
   "packages": {
     "react": {
       "version": "19.3.0",
@@ -17,8 +17,8 @@
       "license": "MIT"
     },
     "next": {
-      "version": "16.3.6",
-      "publishedAt": "2026-09-22T16:19:00.458Z",
+      "version": "16.3.7",
+      "publishedAt": "2026-09-29T09:04:19.157Z",
       "node": ">=20.9.0",
       "deprecated": null,
       "license": "MIT"
