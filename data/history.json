@@ -469,5 +469,35 @@
     "checkedAt": "2026-09-30T09:51:31.211Z",
     "packageCount": 16,
     "changes": []
+  },
+  {
+    "checkedAt": "2026-10-01T10:18:53.879Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "next",
+        "type": "patch",
+        "from": "16.3.7",
+        "to": "16.3.8"
+      },
+      {
+        "package": "vite",
+        "type": "patch",
+        "from": "8.3.1",
+        "to": "8.3.2"
+      },
+      {
+        "package": "vitest",
+        "type": "patch",
+        "from": "5.0.2",
+        "to": "5.0.3"
+      },
+      {
+        "package": "turbo",
+        "type": "patch",
+        "from": "2.11.5",
+        "to": "2.11.6"
+      }
+    ]
   }
 ]
