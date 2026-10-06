@@ -538,5 +538,17 @@
     "checkedAt": "2026-10-05T10:41:52.270Z",
     "packageCount": 16,
     "changes": []
+  },
+  {
+    "checkedAt": "2026-10-06T10:34:17.658Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "vite",
+        "type": "patch",
+        "from": "8.3.2",
+        "to": "8.3.3"
+      }
+    ]
   }
 ]
