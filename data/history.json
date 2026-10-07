@@ -550,5 +550,17 @@
         "to": "8.3.3"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-10-07T10:25:54.594Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "next",
+        "type": "minor",
+        "from": "16.3.8",
+        "to": "16.4.0"
+      }
+    ]
   }
 ]
