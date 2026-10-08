@@ -562,5 +562,17 @@
         "to": "16.4.0"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-10-08T10:46:27.282Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "playwright",
+        "type": "minor",
+        "from": "1.63.0",
+        "to": "1.64.0"
+      }
+    ]
   }
 ]
