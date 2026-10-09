@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-08T10:46:27.282Z",
+  "checkedAt": "2026-10-09T10:45:20.572Z",
   "packages": {
     "react": {
       "version": "19.3.0",
@@ -31,8 +31,8 @@
       "license": "Apache-2.0"
     },
     "vite": {
-      "version": "8.3.3",
-      "publishedAt": "2026-10-06T04:10:19.326Z",
+      "version": "8.3.4",
+      "publishedAt": "2026-10-08T12:07:04.441Z",
       "node": "^20.19.0 || >=22.12.0",
       "deprecated": null,
       "license": "MIT"
