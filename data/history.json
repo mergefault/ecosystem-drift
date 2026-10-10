@@ -586,5 +586,23 @@
         "to": "8.3.4"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-10-10T10:00:32.076Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "prettier",
+        "type": "patch",
+        "from": "3.9.9",
+        "to": "3.9.10"
+      },
+      {
+        "package": "express",
+        "type": "minor",
+        "from": "5.2.1",
+        "to": "5.3.0"
+      }
+    ]
   }
 ]

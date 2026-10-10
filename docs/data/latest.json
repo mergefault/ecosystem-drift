@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-09T10:45:20.572Z",
+  "checkedAt": "2026-10-10T10:00:32.076Z",
   "packages": {
     "react": {
       "version": "19.3.0",
@@ -59,8 +59,8 @@
       "license": "MIT"
     },
     "prettier": {
-      "version": "3.9.9",
-      "publishedAt": "2026-09-23T06:31:34.693Z",
+      "version": "3.9.10",
+      "publishedAt": "2026-10-10T08:35:28.472Z",
       "node": ">=14",
       "deprecated": null,
       "license": "MIT"
@@ -101,8 +101,8 @@
       "license": "MIT"
     },
     "express": {
-      "version": "5.2.1",
-      "publishedAt": "2025-12-01T20:49:43.268Z",
+      "version": "5.3.0",
+      "publishedAt": "2026-10-09T12:56:54.505Z",
       "node": ">= 18",
       "deprecated": null,
       "license": "MIT"
