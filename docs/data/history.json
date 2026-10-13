@@ -633,5 +633,23 @@
         "to": "5.104.2"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-10-13T10:49:20.358Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "zod",
+        "type": "patch",
+        "from": "4.6.6",
+        "to": "4.6.7"
+      },
+      {
+        "package": "fastify",
+        "type": "patch",
+        "from": "5.12.5",
+        "to": "5.12.7"
+      }
+    ]
   }
 ]
