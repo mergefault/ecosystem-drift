@@ -651,5 +651,17 @@
         "to": "5.12.7"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-10-14T08:52:43.606Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "turbo",
+        "type": "patch",
+        "from": "2.11.7",
+        "to": "2.11.8"
+      }
+    ]
   }
 ]
