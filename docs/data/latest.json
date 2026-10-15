@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-14T08:52:43.606Z",
+  "checkedAt": "2026-10-15T08:27:44.488Z",
   "packages": {
     "react": {
-      "version": "19.3.0",
-      "publishedAt": "2026-09-09T17:21:30.071Z",
+      "version": "19.3.1",
+      "publishedAt": "2026-10-14T16:47:15.290Z",
       "node": ">=0.10.0",
       "deprecated": null,
       "license": "MIT"
     },
     "react-dom": {
-      "version": "19.3.0",
-      "publishedAt": "2026-09-09T17:17:39.744Z",
+      "version": "19.3.1",
+      "publishedAt": "2026-10-14T16:49:10.081Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
     },
     "next": {
-      "version": "16.4.0",
-      "publishedAt": "2026-10-06T18:35:31.699Z",
+      "version": "16.4.1",
+      "publishedAt": "2026-10-14T17:43:55.246Z",
       "node": ">=20.9.0",
       "deprecated": null,
       "license": "MIT"
@@ -45,8 +45,8 @@
       "license": "MIT"
     },
     "playwright": {
-      "version": "1.64.0",
-      "publishedAt": "2026-10-07T20:42:55.791Z",
+      "version": "1.64.1",
+      "publishedAt": "2026-10-14T11:54:49.998Z",
       "node": ">=20",
       "deprecated": null,
       "license": "Apache-2.0"
@@ -87,8 +87,8 @@
       "license": "MIT"
     },
     "@tanstack/react-query": {
-      "version": "5.104.2",
-      "publishedAt": "2026-10-11T19:35:15.506Z",
+      "version": "5.104.3",
+      "publishedAt": "2026-10-15T07:53:35.788Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
