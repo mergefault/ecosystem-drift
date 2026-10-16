@@ -699,5 +699,23 @@
         "to": "5.104.3"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-10-16T08:20:26.794Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "next",
+        "type": "patch",
+        "from": "16.4.1",
+        "to": "16.4.2"
+      },
+      {
+        "package": "vitest",
+        "type": "patch",
+        "from": "5.0.4",
+        "to": "5.0.5"
+      }
+    ]
   }
 ]
