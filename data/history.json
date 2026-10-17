@@ -717,5 +717,23 @@
         "to": "5.0.5"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-10-17T07:56:01.623Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "eslint",
+        "type": "minor",
+        "from": "10.12.0",
+        "to": "10.13.0"
+      },
+      {
+        "package": "turbo",
+        "type": "patch",
+        "from": "2.11.8",
+        "to": "2.11.9"
+      }
+    ]
   }
 ]
