@@ -735,5 +735,17 @@
         "to": "2.11.9"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-10-18T08:11:12.104Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "@tanstack/react-query",
+        "type": "patch",
+        "from": "5.104.3",
+        "to": "5.104.4"
+      }
+    ]
   }
 ]
