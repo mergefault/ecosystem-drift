@@ -764,5 +764,23 @@
         "to": "5.104.5"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-10-21T08:44:12.824Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "vite",
+        "type": "patch",
+        "from": "8.3.4",
+        "to": "8.3.5"
+      },
+      {
+        "package": "turbo",
+        "type": "patch",
+        "from": "2.11.9",
+        "to": "2.11.10"
+      }
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-20T08:43:47.441Z",
+  "checkedAt": "2026-10-21T08:44:12.824Z",
   "packages": {
     "react": {
       "version": "19.3.1",
@@ -31,8 +31,8 @@
       "license": "Apache-2.0"
     },
     "vite": {
-      "version": "8.3.4",
-      "publishedAt": "2026-10-08T12:07:04.441Z",
+      "version": "8.3.5",
+      "publishedAt": "2026-10-21T06:38:54.907Z",
       "node": "^20.19.0 || >=22.12.0",
       "deprecated": null,
       "license": "MIT"
@@ -66,8 +66,8 @@
       "license": "MIT"
     },
     "turbo": {
-      "version": "2.11.9",
-      "publishedAt": "2026-10-16T19:07:34.393Z",
+      "version": "2.11.10",
+      "publishedAt": "2026-10-20T20:35:57.341Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
