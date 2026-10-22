@@ -782,5 +782,17 @@
         "to": "2.11.10"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-10-22T08:46:24.161Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "zustand",
+        "type": "patch",
+        "from": "5.0.15",
+        "to": "5.0.16"
+      }
+    ]
   }
 ]
