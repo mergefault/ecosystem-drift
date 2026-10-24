@@ -799,5 +799,17 @@
     "checkedAt": "2026-10-23T08:42:15.216Z",
     "packageCount": 16,
     "changes": []
+  },
+  {
+    "checkedAt": "2026-10-24T08:16:58.315Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "next",
+        "type": "patch",
+        "from": "16.4.2",
+        "to": "16.4.3"
+      }
+    ]
   }
 ]
