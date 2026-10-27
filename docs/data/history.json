@@ -821,5 +821,17 @@
     "checkedAt": "2026-10-26T09:10:55.335Z",
     "packageCount": 16,
     "changes": []
+  },
+  {
+    "checkedAt": "2026-10-27T09:11:42.986Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "@tanstack/react-query",
+        "type": "minor",
+        "from": "5.104.5",
+        "to": "5.105.0"
+      }
+    ]
   }
 ]
