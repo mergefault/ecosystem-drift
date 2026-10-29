@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-28T09:52:27.701Z",
+  "checkedAt": "2026-10-29T10:14:32.041Z",
   "packages": {
     "react": {
       "version": "19.3.1",
@@ -94,8 +94,8 @@
       "license": "MIT"
     },
     "@trpc/server": {
-      "version": "11.19.0",
-      "publishedAt": "2026-09-16T23:38:40.887Z",
+      "version": "11.22.1",
+      "publishedAt": "2026-10-28T23:40:13.679Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"

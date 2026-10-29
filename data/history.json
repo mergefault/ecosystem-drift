@@ -838,5 +838,17 @@
     "checkedAt": "2026-10-28T09:52:27.701Z",
     "packageCount": 16,
     "changes": []
+  },
+  {
+    "checkedAt": "2026-10-29T10:14:32.041Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "@trpc/server",
+        "type": "minor",
+        "from": "11.19.0",
+        "to": "11.22.1"
+      }
+    ]
   }
 ]
