@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-30T10:15:44.859Z",
+  "checkedAt": "2026-10-31T09:49:57.756Z",
   "packages": {
     "react": {
       "version": "19.3.1",
@@ -52,8 +52,8 @@
       "license": "Apache-2.0"
     },
     "eslint": {
-      "version": "10.13.0",
-      "publishedAt": "2026-10-16T14:24:10.765Z",
+      "version": "10.14.0",
+      "publishedAt": "2026-10-30T14:12:27.179Z",
       "node": "^20.19.0 || ^22.13.0 || >=24",
       "deprecated": null,
       "license": "MIT"
