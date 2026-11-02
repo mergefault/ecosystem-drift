@@ -879,5 +879,23 @@
         "to": "5.105.1"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-11-02T11:28:50.978Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "next",
+        "type": "patch",
+        "from": "16.4.3",
+        "to": "16.4.4"
+      },
+      {
+        "package": "fastify",
+        "type": "patch",
+        "from": "5.12.7",
+        "to": "5.12.8"
+      }
+    ]
   }
 ]

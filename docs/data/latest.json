@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-01T10:39:47.889Z",
+  "checkedAt": "2026-11-02T11:28:50.978Z",
   "packages": {
     "react": {
       "version": "19.3.1",
@@ -17,8 +17,8 @@
       "license": "MIT"
     },
     "next": {
-      "version": "16.4.3",
-      "publishedAt": "2026-10-23T13:40:24.922Z",
+      "version": "16.4.4",
+      "publishedAt": "2026-11-02T10:49:48.611Z",
       "node": ">=20.9.0",
       "deprecated": null,
       "license": "MIT"
@@ -108,8 +108,8 @@
       "license": "MIT"
     },
     "fastify": {
-      "version": "5.12.7",
-      "publishedAt": "2026-10-13T08:07:53.258Z",
+      "version": "5.12.8",
+      "publishedAt": "2026-11-02T10:46:39.236Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
