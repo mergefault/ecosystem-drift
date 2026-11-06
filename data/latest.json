@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-05T11:15:20.676Z",
+  "checkedAt": "2026-11-06T11:13:15.233Z",
   "packages": {
     "react": {
       "version": "19.3.1",
@@ -45,8 +45,8 @@
       "license": "MIT"
     },
     "playwright": {
-      "version": "1.64.1",
-      "publishedAt": "2026-10-14T11:54:49.998Z",
+      "version": "1.65.0",
+      "publishedAt": "2026-11-05T18:28:14.786Z",
       "node": ">=20",
       "deprecated": null,
       "license": "Apache-2.0"
