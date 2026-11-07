@@ -963,5 +963,29 @@
         "to": "1.65.0"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-11-07T10:29:33.957Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "zustand",
+        "type": "minor",
+        "from": "5.0.16",
+        "to": "5.1.0"
+      },
+      {
+        "package": "@tanstack/react-query",
+        "type": "minor",
+        "from": "5.106.1",
+        "to": "5.107.1"
+      },
+      {
+        "package": "@trpc/server",
+        "type": "minor",
+        "from": "11.24.0",
+        "to": "11.25.0"
+      }
+    ]
   }
 ]
