@@ -992,5 +992,23 @@
     "checkedAt": "2026-11-08T10:36:46.730Z",
     "packageCount": 16,
     "changes": []
+  },
+  {
+    "checkedAt": "2026-11-09T11:52:59.060Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "vite",
+        "type": "patch",
+        "from": "8.3.6",
+        "to": "8.3.7"
+      },
+      {
+        "package": "@trpc/server",
+        "type": "patch",
+        "from": "11.25.0",
+        "to": "11.25.2"
+      }
+    ]
   }
 ]

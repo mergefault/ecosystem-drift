@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-08T10:36:46.730Z",
+  "checkedAt": "2026-11-09T11:52:59.060Z",
   "packages": {
     "react": {
       "version": "19.3.1",
@@ -31,8 +31,8 @@
       "license": "Apache-2.0"
     },
     "vite": {
-      "version": "8.3.6",
-      "publishedAt": "2026-11-05T05:40:52.195Z",
+      "version": "8.3.7",
+      "publishedAt": "2026-11-09T10:25:29.212Z",
       "node": "^20.19.0 || >=22.12.0",
       "deprecated": null,
       "license": "MIT"
@@ -94,8 +94,8 @@
       "license": "MIT"
     },
     "@trpc/server": {
-      "version": "11.25.0",
-      "publishedAt": "2026-11-06T14:27:07.071Z",
+      "version": "11.25.2",
+      "publishedAt": "2026-11-08T17:14:15.924Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
