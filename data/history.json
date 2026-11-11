@@ -1028,5 +1028,23 @@
         "to": "11.26.0"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-11-11T11:15:42.483Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "vite",
+        "type": "patch",
+        "from": "8.3.7",
+        "to": "8.3.8"
+      },
+      {
+        "package": "@trpc/server",
+        "type": "minor",
+        "from": "11.26.0",
+        "to": "11.28.0"
+      }
+    ]
   }
 ]
