@@ -1046,5 +1046,23 @@
         "to": "11.28.0"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-11-12T11:33:11.748Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "prettier",
+        "type": "minor",
+        "from": "3.9.10",
+        "to": "3.10.1"
+      },
+      {
+        "package": "turbo",
+        "type": "patch",
+        "from": "2.11.10",
+        "to": "2.11.11"
+      }
+    ]
   }
 ]
