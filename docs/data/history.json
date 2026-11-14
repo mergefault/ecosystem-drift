@@ -1069,5 +1069,29 @@
     "checkedAt": "2026-11-13T11:17:42.289Z",
     "packageCount": 16,
     "changes": []
+  },
+  {
+    "checkedAt": "2026-11-14T10:42:34.079Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "playwright",
+        "type": "patch",
+        "from": "1.65.0",
+        "to": "1.65.1"
+      },
+      {
+        "package": "eslint",
+        "type": "minor",
+        "from": "10.14.0",
+        "to": "10.15.0"
+      },
+      {
+        "package": "@trpc/server",
+        "type": "patch",
+        "from": "11.28.0",
+        "to": "11.28.1"
+      }
+    ]
   }
 ]
