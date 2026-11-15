@@ -1093,5 +1093,17 @@
         "to": "11.28.1"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-11-15T11:17:28.251Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "@trpc/server",
+        "type": "patch",
+        "from": "11.28.1",
+        "to": "11.28.2"
+      }
+    ]
   }
 ]
