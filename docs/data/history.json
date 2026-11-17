@@ -1117,5 +1117,17 @@
         "to": "11.28.3"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-11-17T12:08:54.311Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "@tanstack/react-query",
+        "type": "patch",
+        "from": "5.107.1",
+        "to": "5.107.2"
+      }
+    ]
   }
 ]
