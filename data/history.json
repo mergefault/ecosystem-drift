@@ -1129,5 +1129,35 @@
         "to": "5.107.2"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-11-18T11:58:40.934Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "vitest",
+        "type": "patch",
+        "from": "5.1.0",
+        "to": "5.1.1"
+      },
+      {
+        "package": "turbo",
+        "type": "patch",
+        "from": "2.11.11",
+        "to": "2.11.12"
+      },
+      {
+        "package": "@tanstack/react-query",
+        "type": "minor",
+        "from": "5.107.2",
+        "to": "5.108.0"
+      },
+      {
+        "package": "@trpc/server",
+        "type": "minor",
+        "from": "11.28.3",
+        "to": "11.29.4"
+      }
+    ]
   }
 ]
