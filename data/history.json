@@ -1159,5 +1159,23 @@
         "to": "11.29.4"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-11-19T11:55:39.516Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "turbo",
+        "type": "patch",
+        "from": "2.11.12",
+        "to": "2.11.13"
+      },
+      {
+        "package": "@trpc/server",
+        "type": "patch",
+        "from": "11.29.4",
+        "to": "11.29.5"
+      }
+    ]
   }
 ]

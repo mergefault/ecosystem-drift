@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-18T11:58:40.934Z",
+  "checkedAt": "2026-11-19T11:55:39.516Z",
   "packages": {
     "react": {
       "version": "19.3.1",
@@ -66,8 +66,8 @@
       "license": "MIT"
     },
     "turbo": {
-      "version": "2.11.12",
-      "publishedAt": "2026-11-17T22:53:26.415Z",
+      "version": "2.11.13",
+      "publishedAt": "2026-11-18T15:28:52.490Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
@@ -94,8 +94,8 @@
       "license": "MIT"
     },
     "@trpc/server": {
-      "version": "11.29.4",
-      "publishedAt": "2026-11-18T01:45:34.505Z",
+      "version": "11.29.5",
+      "publishedAt": "2026-11-18T20:09:17.946Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
