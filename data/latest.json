@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-19T11:55:39.516Z",
+  "checkedAt": "2026-11-20T11:56:52.539Z",
   "packages": {
     "react": {
       "version": "19.3.1",
@@ -87,8 +87,8 @@
       "license": "MIT"
     },
     "@tanstack/react-query": {
-      "version": "5.108.0",
-      "publishedAt": "2026-11-17T13:45:33.768Z",
+      "version": "5.108.1",
+      "publishedAt": "2026-11-19T14:03:03.906Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
