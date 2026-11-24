@@ -1225,5 +1225,23 @@
         "to": "5.108.3"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-11-24T14:01:06.199Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "@tanstack/react-query",
+        "type": "patch",
+        "from": "5.108.3",
+        "to": "5.108.4"
+      },
+      {
+        "package": "@trpc/server",
+        "type": "minor",
+        "from": "11.29.7",
+        "to": "11.31.2"
+      }
+    ]
   }
 ]
