@@ -1243,5 +1243,23 @@
         "to": "11.31.2"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-11-25T13:14:21.629Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "vitest",
+        "type": "patch",
+        "from": "5.1.1",
+        "to": "5.1.2"
+      },
+      {
+        "package": "@trpc/server",
+        "type": "patch",
+        "from": "11.31.2",
+        "to": "11.31.3"
+      }
+    ]
   }
 ]
