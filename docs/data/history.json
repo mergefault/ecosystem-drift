@@ -1261,5 +1261,17 @@
         "to": "11.31.3"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-11-26T12:55:21.327Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "vite",
+        "type": "minor",
+        "from": "8.3.8",
+        "to": "8.4.0"
+      }
+    ]
   }
 ]
