@@ -1273,5 +1273,17 @@
         "to": "8.4.0"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-11-27T12:50:51.760Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "@trpc/server",
+        "type": "minor",
+        "from": "11.31.3",
+        "to": "11.32.0"
+      }
+    ]
   }
 ]
