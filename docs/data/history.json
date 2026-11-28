@@ -1285,5 +1285,23 @@
         "to": "11.32.0"
       }
     ]
+  },
+  {
+    "checkedAt": "2026-11-28T12:01:55.569Z",
+    "packageCount": 16,
+    "changes": [
+      {
+        "package": "eslint",
+        "type": "minor",
+        "from": "10.15.0",
+        "to": "10.16.0"
+      },
+      {
+        "package": "@trpc/server",
+        "type": "patch",
+        "from": "11.32.0",
+        "to": "11.32.2"
+      }
+    ]
   }
 ]

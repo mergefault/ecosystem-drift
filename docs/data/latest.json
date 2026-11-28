@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-27T12:50:51.760Z",
+  "checkedAt": "2026-11-28T12:01:55.569Z",
   "packages": {
     "react": {
       "version": "19.3.1",
@@ -52,8 +52,8 @@
       "license": "Apache-2.0"
     },
     "eslint": {
-      "version": "10.15.0",
-      "publishedAt": "2026-11-13T21:33:34.115Z",
+      "version": "10.16.0",
+      "publishedAt": "2026-11-27T16:23:21.440Z",
       "node": "^20.19.0 || ^22.13.0 || >=24",
       "deprecated": null,
       "license": "MIT"
@@ -94,8 +94,8 @@
       "license": "MIT"
     },
     "@trpc/server": {
-      "version": "11.32.0",
-      "publishedAt": "2026-11-27T12:37:16.190Z",
+      "version": "11.32.2",
+      "publishedAt": "2026-11-27T16:55:51.270Z",
       "node": null,
       "deprecated": null,
       "license": "MIT"
